@@ -1,0 +1,10 @@
+<h1>Tesla Car's site</h1>
+<hr>
+<h3>Select a car to see it:</h3>
+<select #Cars  [(ngModel)]="selectedCar" name="cars" >
+    <option value="3">Model 3</option>
+    <option value="S">Model S</option>
+    <option value="X">Model X</option>
+    <option value="Y">Model Y</option>
+</select>
+<app-child Car="{{selectedCar}}" ></app-child>
